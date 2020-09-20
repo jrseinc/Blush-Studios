@@ -53,6 +53,13 @@ body{
 .nav-links-item a:focus{
     border-bottom: 3px solid gold;
 }
+/*****Media Query*****/
+@media only screen and (max-width: 750px){
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 /*HERO SECTION*/
 /*************/
