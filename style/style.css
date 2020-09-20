@@ -1,0 +1,258 @@
+/*
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Playfair Display', serif;
+*/
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    max-width: 1500px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.logo{
+    margin-bottom: 1.5em;
+}
+
+.nav-links{
+    display:flex;
+    margin-left: -1em;
+}
+
+.nav-links-item{
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+.nav-links-item a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.nav-links-item a:active, 
+.nav-links-item a:focus{
+    border-bottom: 3px solid gold;
+}
+
+/*HERO SECTION*/
+/*************/
+.main{
+    text-align: center;
+    margin-bottom: 10em;
+}
+
+.hero-img{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    border-radius: 5px;
+}
+
+.hero-head{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: gold;
+}
+
+.hero-intro{
+    max-width: 90%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.hero-signature{
+    width: 15%;
+}
+
+.hero-signature-name{
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-signature-name::after{
+    content: '';
+    border-bottom: 3px solid gold;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+/*****Media Query*****/
+@media only screen and (max-width: 750px){
+    body{
+        width: 95%;
+    }
+    .hero-img{
+        width: 95%;
+    }
+    .hero-head{
+        font-size: 1.5rem;
+    }
+    .hero-intro{
+        font-size: 1rem;
+    }
+    .hero-signature{
+        width: 25%;
+    }
+    .hero-signature-name{
+        font-size: 1rem;
+    }
+}
+
+
+/*ABOUT SECTION*/
+/***************/
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10em;
+}
+
+.about-container{
+    width: 33%;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.about-container:hover{
+    cursor: pointer;
+}
+
+.about-container-pic{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.about-container-head{
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+/*******Media Queries for about section**********/
+@media only screen and (max-width: 750px){
+    .about{
+        flex-direction: column;
+    }
+
+    .about-container{
+        width: 100%;
+    }
+
+    .about-container-pic{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .about-container-head{
+        margin-bottom: 0.5em;
+    }
+    .about-container-disc{
+        margin-bottom: 2em;
+    }
+}
+
+/***GALLERY****/
+/**************/
+
+.gallery{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 7em;
+}
+
+.gallery-head{
+    margin-bottom: 3em;
+}
+
+.gallery-head::after{
+    content: '';
+    border-bottom: 3px solid gold;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 0.5em;
+}
+
+.gallery-container img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+/****FOOTER****/
+
+.footer{
+    /* border: 2px solid black; */
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em 0 5em 0;
+    font-size: 1.1em;
+    font-family: 'Playfair Display', serif;;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer-sub-head{
+    margin-bottom: 0.5em;
+}
+
+.footer ul li{
+    margin-bottom: 0.5em;
+}
+
+.footer ul li:hover{
+    cursor: pointer;
+}
+
+/***MEDIA QUERIES*******/
+
+@media only screen and (max-width: 750px){
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-sub{
+        margin-bottom: 1em;
+    }
+}
